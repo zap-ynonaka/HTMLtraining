@@ -5,6 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>training-01</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <script>
+  $(function(){
+    $('.tab-btn li').on('click',function(){
+      const index = $('.tab-btn li').index(this) + 1;
+      $('.tab-btn li').removeClass('active');
+      $(this).addClass('active');
+      $('.tab-area li').removeClass('active');
+      $('.tab-area li:nth-of-type(' + index + ')').addClass('active');
+    });
+  });
+  </script>
 </head>
 <body>
   <h1>タブを作ろう</h1>
