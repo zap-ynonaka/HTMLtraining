@@ -13,6 +13,7 @@ html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre
 
 h1 {
 	font-size: 20px;
+    margin: 30px 10px;
 }
 section {
 	width: 90%;
